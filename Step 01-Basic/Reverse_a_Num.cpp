@@ -8,7 +8,7 @@ void solve(){
     int rev =  0 , digit = 0;
     while(n){
         digit = n % 10 ;
-        rev = rev * 10 + digit ;
+        rev = rev * 10 + digit ; //for forword {forw = digit * pow(10,i) + forw [i-> 0 to n] }
         n /= 10 ;
     } 	
 
