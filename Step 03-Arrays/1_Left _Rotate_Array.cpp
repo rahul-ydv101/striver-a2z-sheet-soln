@@ -1,9 +1,5 @@
-//Only Contains Postive Numbers
-
-//Brute --> 3 nested loop --> 2 for find all subarray 1 for Sum
-//better --> 2 nested loop--> same but sum can be calc by previoussum + present element
-//optimal----| 
-// using hashmap  + 
+//time complexity --> 
+//space complexity(auxillary)--> 
 
 #include <bits/stdc++.h>
 using namespace std;
@@ -15,9 +11,22 @@ void solve(){
     vector<int> arr(n);
     for(int i = 0 ; i < n ; i++){
         cin >> arr[i] ;
-    } 	
+    }
 
 
+    int first = arr[0] ;
+    for(int i = 0 ; i < n ; i++){
+        arr[i] = arr[i+1] ;
+    }
+    arr[n-1] = first ;
+
+    
+
+    for(int i = 0 ; i < n ; i++){
+        cout <<  arr[i] << " " ;
+    }
+
+cout <<endl ;
 
 }
 
