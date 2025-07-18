@@ -21,16 +21,17 @@ void solve(){
 
         if (arr[i] == 1)
             cnt++;
-            //maxi = max(cnt , maxi)//when can write hare compaire for all ones comes
+            //maxi = max(cnt , maxi){correct}
+            //when can write here compaire for all ones comes
 
         else{
 
             cnt = 0 ;
-            // maxi = max(cnt, maxi);
+            // maxi = max(cnt, maxi);{wrong}
             //if  its written here if 0 not comes at last. then will not update max for last commings ones
         }
 
-        maxi = max(cnt, maxi);
+        maxi = max(cnt, maxi);//{correct}
 
         i++ ;
 

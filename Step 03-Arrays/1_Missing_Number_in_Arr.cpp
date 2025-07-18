@@ -1,3 +1,6 @@
+//Brute --> use Hashing
+
+
 //time complexity --> O(n)
 //space complexity(auxillary)--> o(1)
 

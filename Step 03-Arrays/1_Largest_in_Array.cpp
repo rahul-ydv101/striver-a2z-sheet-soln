@@ -1,3 +1,8 @@
+//brute --> sort return last ; // T.C --> O(NlogN)
+
+
+//TC --> O(n)
+//SC --> O(1)
 #include <bits/stdc++.h>
 using namespace std;
 

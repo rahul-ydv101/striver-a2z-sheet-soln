@@ -12,7 +12,6 @@ void solve()
         cout << "Not Prime";
         return ;
     }
-    
     while (i < n)
     { /* In competitive programming and interviews, using i * i <= n 
      is considered a standard optimization for prime checking*/

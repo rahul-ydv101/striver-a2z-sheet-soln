@@ -8,27 +8,39 @@
 
 
 //1752. Check if Array Is Sorted and Rotated by D (including D = 0)
-    //There may be duplicates in the original array
-
-
 #include <bits/stdc++.h>
 using namespace std;
+
+bool check(vector<int>& nums , int size) {
+
+int count = 0;
+for(int i = 0; i < size; i++) {
+    if(nums[i] > nums[(i + 1) % size]) { // also check last to first
+        count++;
+    }
+}
+return count <= 1; // if all element are same count = 0 ;
+}
+
+
 
 bool solve(){
 
     int n ;
     cin >> n ;
-    vector<int> arr(n);
+
+    vector<int> arr;
     for(int i = 0 ; i < n ; i++){
-        cin >> arr[i] ;
+        int x;
+        cin>> x ;
+        arr.push_back(x) ;
     }
 
+    return check(arr ,n) ;
 
 
 }
     
-
-
 
 int main(){
     int t = 1;

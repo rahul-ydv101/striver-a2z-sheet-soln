@@ -1,5 +1,5 @@
-//time complexity --> O(n)
-//space complexity(auxillary)--> o(1)
+//time complexity -->  O(n)
+//space complexity(auxillary)--> O(1)
 
 #include <bits/stdc++.h>
 using namespace std;
