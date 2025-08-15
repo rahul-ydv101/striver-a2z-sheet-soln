@@ -1,4 +1,4 @@
-// //To Check is Sorted Only
+// //To Check Array is Sorted Only
 //     for(int i = 0 ; i < arr.size()-1 ; i ++){
 //         if(arr[i] > arr[i+1]){                       //Time comlexity -->> O(n)
 //             return false ;
